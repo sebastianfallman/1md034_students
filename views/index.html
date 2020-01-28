@@ -49,14 +49,51 @@
                     </tbody>
                 </table>
             </section>
-            <section>
+            <section id="order">
+            <form>
                 <h2>Customer Information</h2>
                 <p>This is where to write name and delivery information</p>
+                <h3>Delivery Information</h3>
+                
+                <p>
+                    <label for="fn">Full name</label><br>
+                    <input type="text" id="fn" name="fn" required="required" placeholder="First- and last name" />
+                </p>
+                <p>
+                    <label for="street">E-mail</label><br>
+                    <input type="email" id="email" name="em" required="required" placeholder="E-mail adress" />
+                </p>
+                <p>
+                    <label for="street">Street</label><br>
+                    <input type="text" id="street" name="street" required="required" placeholder="Street name" />
+                </p>
+                <p>
+                    <label for="housenumber">House</label><br>
+                    <input type="number" id="hn" name="housenumber" required="required" placeholder="House number" />
+                </p>
+                <p>
+                    <label for="payment">Payment options</label><br />
+                    <select id="payment" name="payo">
+                        <option selected="selected">Credit card</option>
+                        <option>Cash</option>
+                        <option>Burger points</option>
+                        <option>Paypal</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="gender">Gender</label><br />
+                    <input type="radio" id="male" name="gender" /><label for="male">Male</label><br />
+                    <input type="radio" id="female" name="gender" /><label for="female">Female</label><br />
+                    <input type="radio" id="non-binary" name="gender" /><label for="non-binary">Non-binary</label><br />
+                    <input type="radio" id="undisclosed" name="gender" checked="checked" /><label for="undisclosed">Undisclosed</label><br />
+                </p>
+            </form>
             </section>
+            <input type="submit" value="Place order" />
         </main> 
     <footer>
         <p><span>&#169; 2020 BurgerBoiz</span></p>
-        <p>Contact: <a href="mailto:sebastian.fallman.2091@student.uu.se">sebastian.fallman.2091@student.uu.se</a>.</p>
+        <p>Contact: <a href="mailto:sebastian.fallman.2091@student.uu.se">Sebastian Fällman</a>.</p>
     </footer>
     </body>
 </html>

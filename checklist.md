@@ -23,13 +23,13 @@ Create an index.html file which contains:
 	- [x] A name
 	- [x] An image
 	- [x] Information about allergies 
-- [ ] A section to collect customer information:
-	- [ ] First- and Last Name (in one field)
-	- [ ] E-Mail Address
-	- [ ] Street
-	- [ ] House Number (only allowing numbers in this field)
-	- [ ] Gender (male, female, do not wish to provide as radio buttons)
-- [ ] A button to place the order
+- [x] A section to collect customer information:
+	- [x] First- and Last Name (in one field)
+	- [x] E-Mail Address
+	- [x] Street
+	- [x] House Number (only allowing numbers in this field)
+	- [x] Gender (male, female, do not wish to provide as radio buttons)
+- [x] A button to place the order
 
 ## 03 CSS
 
