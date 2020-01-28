@@ -16,13 +16,13 @@ Before you submit the different parts of your lab, make sure that your project f
 - [x] Ensure the website loads when opening http://localhost:3000/
 
 Create an index.html file which contains:
-- [ ] A title
-- [ ] A main headline and two section headlines
-- [ ] Semantic tags that correspond to the parts of your page
-- [ ] A section to select burgers that contains at least three items. Each item has at least:
-	- [ ] A name
-	- [ ] An image
-	- [ ] Information about allergies 
+- [x] A title
+- [x] A main headline and two section headlines
+- [x] Semantic tags that correspond to the parts of your page
+- [x] A section to select burgers that contains at least three items. Each item has at least:
+	- [x] A name
+	- [x] An image
+	- [x] Information about allergies 
 - [ ] A section to collect customer information:
 	- [ ] First- and Last Name (in one field)
 	- [ ] E-Mail Address
