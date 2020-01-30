@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 14pt;
+    margin: 0 auto;
+}
+
+table {
+    margin: 0 auto;
+}
+
+.allergies {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#burgers {
+    background-color: black;
+    color: white;
+}
+
+#order {
+
+}
+
+.burgerimg {
+    width: 33vw;
+    height: 35vh;
+}
+
+input[type="submit"]:hover {
+    color: orchid;
+}
+
+#payment:hover {
+    color: orchid;
+}
+
+a[href], input[type='submit'], input[type='image'], label[for], input[type='radio'], select, button, .pointer {
+    cursor: pointer;
+}
