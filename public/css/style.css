@@ -18,12 +18,13 @@ h2 {
     margin-left: 20px;
     margin-top: 20px;
     margin-right: 20px;
+    border: 2px dashed blueviolet;
 }
 
 #headertext {
     position: absolute;
-    padding-top: 2em;
-    padding-left: 2em;
+    padding-left: 6vh;
+    padding-top: 6vh;
     font-size: 36pt;
     z-index: 999;
 }
