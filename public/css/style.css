@@ -9,6 +9,10 @@ table {
     margin: 0 auto;
 }
 
+h1 {
+    margin-left: 20px;
+}
+
 .allergies {
     text-transform: uppercase;
     font-weight: bold;
@@ -17,15 +21,29 @@ table {
 #burgers {
     background-color: black;
     color: white;
+    overflow: hidden;
+    border: 2px dashed white;
+    margin: 0px 20px 0px;
 }
 
 #order {
+    margin: 0px 20px 0px;
+    border: 2px dashed black;
+    padding-left: 10px;
+}
 
+#header {
+    margin-left: 20px;
+    margin-bottom: 15px;
 }
 
 .burgerimg {
     width: 33vw;
     height: 35vh;
+}
+
+input[type="submit"] {
+    margin-left: 20px;
 }
 
 input[type="submit"]:hover {
