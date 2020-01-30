@@ -44,9 +44,9 @@ Add the following style/behaviour to your website (mostly in style.css but also 
 - [x] Change the cursor and background when hovering over the order button
 - [x] Define a table width and center it
 - [x] Add margins to the sections and the order button
-- [ ] Add a border to the two sections
-- [ ] Add an image after your headline and make it slightly transparent
-- [ ] Place the image behind your headline to finalize your header
+- [x] Add a border to the two sections
+- [x] Add an image after your headline and make it slightly transparent
+- [x] Place the image behind your headline to finalize your header
 - [ ] Use a grid layout instead of tables for the burger selection section
 
 
