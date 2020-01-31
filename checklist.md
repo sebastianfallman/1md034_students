@@ -47,7 +47,7 @@ Add the following style/behaviour to your website (mostly in style.css but also 
 - [x] Add a border to the two sections
 - [x] Add an image after your headline and make it slightly transparent
 - [x] Place the image behind your headline to finalize your header
-- [ ] Use a grid layout instead of tables for the burger selection section
+- [x] Use a grid layout instead of tables for the burger selection section
 
 
 ## 04 JavaScript and Vue

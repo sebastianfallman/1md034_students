@@ -13,43 +13,37 @@
                 <img src="img/BurgerHeader.jpg" id="headerimg">
             </section>
             <section id="burgers">
-                <h2>Select burger</h2>
+                <h2 id="h2burger">Select a burger</h2>
                 <p>This is where to chose a burger</p>
                 <table id="burgertable">
-                    <thead>
-                        <tr>
-                            <th>The OG</th>
-                            <th>Holy Cow</th>
-                            <th>The Monster Chickenburger</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                            <img class="burgerimg" src="img/TheOG.png">
-                            <ul>
-                                <li>700kcal</li>
-                                <li><span id="allergies">Lactose</span>  free</li>
-                                <li>Contains<span class="allergies"> gluten</span></li>
-                            </ul>
-                            </td>
-                            <td>
-                                <img class="burgerimg" src="img/HolyCow.png">
-                                <ul>
-                                    <li>900kcal</li>
-                                    <li>Contains <span id="allergies">lactose</span></li>
-                                    <li><span class="allergies">Gluten</span> free</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <img class="burgerimg" src="img/TMC.png">
-                                <ul>
-                                    <li>1500kcal</li>
-                                    <li>Contains <span class="allergies"> everything</span>.</li>
-                                </ul>
-                                </td>
-                        </tr>
-                    </tbody>
+                <div class="burgerbox">
+                    <div class="r1 c1"><h3>The OG</h3></div>
+                    <div class="r1 c2"><h3>Holy Cow</h3></div>
+                    <div class="r1 c3"><h3>The Monster Chickenburger</h3></div>
+                    <div class="r2 c1"><img class="burgerimg" src="img/TheOG.png"></div>
+                    <div class="r2 c2"><img class="burgerimg" src="img/HolyCow.png"></div>
+                    <div class="r2 c3"><img class="burgerimg" src="img/TMC.png"></div>
+                    <div class="r3 c1">
+                        <ul>
+                            <li>700kcal</li>
+                            <li><span id="allergies">Lactose</span>  free</li>
+                            <li>Contains<span class="allergies"> gluten</span></li>
+                        </ul>
+                    </div>
+                    <div class="r3 c2">
+                        <ul>
+                            <li>900kcal</li>
+                            <li>Contains <span id="allergies">lactose</span></li>
+                            <li><span class="allergies">Gluten</span> free</li>
+                        </ul>
+                    </div>
+                    <div class="r3 c3">
+                        <ul>
+                            <li>1500kcal</li>
+                            <li>Contains <span class="allergies"> everything</span>.</li>
+                        </ul>
+                    </div>
+                </div>
                 </table>
             </section>
             <section id="order">
