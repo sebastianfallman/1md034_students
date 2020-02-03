@@ -52,10 +52,10 @@ Add the following style/behaviour to your website (mostly in style.css but also 
 
 ## 04 JavaScript and Vue
 
-- [ ] Create js_script.js and vue_script.js
-- [ ] Link to js_script.js, vue_script.js as well as vue.js in index.html
-- [ ] Add a menuItem constructor with relevant properties to js_script.js
-- [ ] Also use your menuItem constructor to instantiate a total of five burgers in js_script.js
+- [x] Create js_script.js and vue_script.js
+- [x] Link to js_script.js, vue_script.js as well as vue.js in index.html
+- [x] Add a menuItem constructor with relevant properties to js_script.js
+- [x] Also use your menuItem constructor to instantiate a total of five burgers in js_script.js
 - [ ] Add the Vue instance example code to vue_script.js 
 - [ ] Update js_script.js with your JSFiddle code and update vue_script.js with your Vue version
 - [ ] Update js_script.js and vue_script.js again with your array + loop solutions

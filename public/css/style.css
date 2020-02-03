@@ -15,7 +15,9 @@ table {
 #headertext {
     position: absolute;
     padding-left: 20%;
+    padding-right: 10%;
     padding-top: 6vh;
+    padding-bottom: 6vh;
     font-size: 5vw;
     z-index: 999;
 }
