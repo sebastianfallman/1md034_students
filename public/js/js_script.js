@@ -1,4 +1,4 @@
-let burgerMenu = document.getElementById("menu");
+/*let burgerMenu = document.getElementById("menu");
 
 for (let i = 0; i < food.length; ++i){
     let burger = document.createElement("div");
@@ -24,3 +24,4 @@ for (let i = 0; i < food.length; ++i){
     burger.appendChild(ul)
     burgerMenu.appendChild(burger);
 }
+*/

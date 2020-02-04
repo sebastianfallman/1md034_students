@@ -7,7 +7,7 @@
         <script src="https://vuejs.org/js/vue.js" defer></script>
         <script type="text/javascript" src="js/menu.js" defer></script>
         <script type="text/javascript" src="js/js_script.js" defer></script>
-        <script type="text/javacript" src="js/vue_script.js" defer></script>    
+        <script type="text/javascript" src="js/vue_script.js" defer></script>
     </head>
     <body>
         <main>
@@ -20,10 +20,10 @@
                 <p>This is where to chose a burger</p>
                 <div id="menu" class="burgerbox">
                     <div v-for="b in food">
-                        <p >{{ b.name }}</p>
+                        <h3>{{ b.name }}</h3>
                         <img class="burgerimg" v-bind:src="b.pathToImg"></img>
                         <ul>
-                            <li>{{ b.kcal }}</li>
+                            <li>{{ b.kcal }} kcal</li>
                             <li  v-if="b.allergies != ''">Contains <span class="allergies">{{ b.allergies }}</span></li>
                         </ul>
                     </div>
