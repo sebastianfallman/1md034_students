@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- | <link rel="stylesheet" type="text/css" href="css/reset.css"> | Commented out for now -->
         <title>BurgerBoiz</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
         <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://vuejs.org/js/vue.js" defer></script>
+        <script type="text/javascript" src="js/menu.js" defer></script>
+        <script type="text/javascript" src="js/js_script.js" defer></script>
+        <script type="text/javacript" src="js/vue_script.js" defer></script>    
     </head>
     <body>
         <main>
@@ -15,31 +18,13 @@
             <section id="burgers">
                 <h2 id="h2burger">Select a burger</h2>
                 <p>This is where to chose a burger</p>
-                <div class="burgerbox">
-                    <div class="r1 c1"><h3>The OG</h3></div>
-                    <div class="r1 c2"><h3>Holy Cow</h3></div>
-                    <div class="r1 c3"><h3>The Monster Chickenburger</h3></div>
-                    <div class="r2 c1"><img class="burgerimg" src="img/TheOG.png"></div>
-                    <div class="r2 c2"><img class="burgerimg" src="img/HolyCow.png"></div>
-                    <div class="r2 c3"><img class="burgerimg" src="img/TMC.png"></div>
-                    <div class="r3 c1">
+                <div id="menu" class="burgerbox">
+                    <div v-for="burger in burgerArray">
+                        <p >{{ burger.name }}</p>
+                        <img class="burgerimg" v-bind:src="burger.pathToImg"></img>
                         <ul>
-                            <li>700kcal</li>
-                            <li><span id="allergies">Lactose</span>  free</li>
-                            <li>Contains<span class="allergies"> gluten</span></li>
-                        </ul>
-                    </div>
-                    <div class="r3 c2">
-                        <ul>
-                            <li>900kcal</li>
-                            <li>Contains <span id="allergies">lactose</span></li>
-                            <li><span class="allergies">Gluten</span> free</li>
-                        </ul>
-                    </div>
-                    <div class="r3 c3">
-                        <ul>
-                            <li>1500kcal</li>
-                            <li>Contains <span class="allergies"> everything</span>.</li>
+                            <li>{{ burger.kcal }}</li>
+                            <li  v-if="burger.allergies != ''">Contains <span class="allergies">{{ burger.allergies }}</span></li>
                         </ul>
                     </div>
                 </div>
@@ -90,8 +75,5 @@
         <p><span>&#169; 2020 BurgerBoiz</span></p>
         <p>Contact: <a href="mailto:sebastian.fallman.2091@student.uu.se">Sebastian Fällman</a>.</p>
     </footer>
-    <script src="https://vuejs.org/js/vue.js"></script>
-    <script src="js/js_script.js"></script>
-    <script src="js/vue_script.js"></script>
     </body>
 </html>
