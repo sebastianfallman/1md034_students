@@ -19,12 +19,12 @@
                 <h2 id="h2burger">Select a burger</h2>
                 <p>This is where to chose a burger</p>
                 <div id="menu" class="burgerbox">
-                    <div v-for="burger in burgerArray">
-                        <p >{{ burger.name }}</p>
-                        <img class="burgerimg" v-bind:src="burger.pathToImg"></img>
+                    <div v-for="b in food">
+                        <p >{{ b.name }}</p>
+                        <img class="burgerimg" v-bind:src="b.pathToImg"></img>
                         <ul>
-                            <li>{{ burger.kcal }}</li>
-                            <li  v-if="burger.allergies != ''">Contains <span class="allergies">{{ burger.allergies }}</span></li>
+                            <li>{{ b.kcal }}</li>
+                            <li  v-if="b.allergies != ''">Contains <span class="allergies">{{ b.allergies }}</span></li>
                         </ul>
                     </div>
                 </div>
