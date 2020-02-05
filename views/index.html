@@ -21,6 +21,7 @@
                 <div id="menu" class="burgerbox">
                     <div v-for="b in food">
                         <h3>{{ b.name }}</h3>
+                        <input type="checkbox" id="burgerCheck" v-model="orderedFood" v-bind:name="b.name" :value="b.name"/>
                         <img class="burgerimg" v-bind:src="b.pathToImg"></img>
                         <ul>
                             <li>{{ b.kcal }} kcal</li>
@@ -30,7 +31,7 @@
                 </div>
             </section>
             <section id="order">
-            <form>
+            <form id="customerForm">
                 <h2>Customer Information</h2>
                 <p>This is where to write name and delivery information</p>
                 <h3>Delivery Information</h3>
@@ -61,15 +62,22 @@
                     </select>
                 </p>
                 <p>
-                    <label for="gender">Gender</label><br />
-                    <input type="radio" id="male" name="gender" /><label for="male">Male</label><br />
-                    <input type="radio" id="female" name="gender" /><label for="female">Female</label><br />
-                    <input type="radio" id="non-binary" name="gender" /><label for="non-binary">Non-binary</label><br />
-                    <input type="radio" id="undisclosed" name="gender" checked="checked" /><label for="undisclosed">Undisclosed</label><br />
+                    <label for="gender">Gender</label><br/>
+                    <input type="radio" id="male" value="male" name="gender"/>
+                    <label for="male">Male</label><br/>
+                    <input type="radio" id="female" value="female" name="gender"/>
+                    <label for="female">Female</label><br/>
+                    <input type="radio" id="non-binary" value="non-binary" name="gender"/>
+                    <label for="non-binary">Non-binary</label><br/>
+                    <input type="radio" id="undisclosed" value="undisclosed" name="gender" checked="checked" />
+                    <label for="undisclosed">Undisclosed</label><br />
                 </p>
             </form>
             </section>
-            <input type="submit" value="Place order" />
+            <input id="orderButton" type="submit" value="Place order" v-on:click="markDone()"/>
+            <p class="finalOrder">    
+                {{finalOrder}}
+            </p>
         </main>
     <footer>
         <p><span>&#169; 2020 BurgerBoiz</span></p>
