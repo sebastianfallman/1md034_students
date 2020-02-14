@@ -25,7 +25,6 @@ const vm = new Vue({
               myArray[3] = gender[i].value;
           }
       }
-      myArray[4] = this.orderedFood;
       this.finalOrder = myArray;
       this.addOrder();
       },
@@ -54,6 +53,7 @@ const vm = new Vue({
         let orderSend = this.order;
         orderSend.orderId = this.getNext();
         orderSend.orderItems = this.orderedFood;
+        orderSend.orderInfo = this.finalOrder;
 
         socket.emit('addOrder', orderSend);
         console.log(orderSend.orderItems);
