@@ -6,16 +6,17 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script src="https://vuejs.org/js/vue.js" defer></script>
         <script type="text/javascript" src="js/menu.js" defer></script>
+        <script src="/socket.io/socket.io.js" defer></script>
         <script type="text/javascript" src="js/js_script.js" defer></script>
         <script type="text/javascript" src="js/vue_script.js" defer></script>
     </head>
     <body>
-        <main>
-            <section id="headerz">
+            <header id="headerz">
                 <h1 id="headertext">Welcome to BurgerBoiz </h1>
                 <img src="img/BurgerHeader.jpg" id="headerimg">
-            </section>
-            <section id="burgers">
+            </header>
+            <main>
+                <section id="burgers">
                 <h2 id="h2burger">Select a burger</h2>
                 <p>This is where to chose a burger</p>
                 <div id="menu" class="burgerbox">
@@ -45,14 +46,6 @@
                     <input type="email" id="email" name="em" required="required" placeholder="E-mail adress" />
                 </p>
                 <p>
-                    <label for="street">Street</label><br>
-                    <input type="text" id="street" name="street" required="required" placeholder="Street name" />
-                </p>
-                <p>
-                    <label for="housenumber">House</label><br>
-                    <input type="number" id="hn" name="housenumber" required="required" placeholder="House number" />
-                </p>
-                <p>
                     <label for="payment">Payment options</label><br />
                     <select id="payment" name="payo">
                         <option selected="selected">Credit card</option>
@@ -72,6 +65,15 @@
                     <input type="radio" id="undisclosed" value="undisclosed" name="gender" checked="checked" />
                     <label for="undisclosed">Undisclosed</label><br />
                 </p>
+                <div class="view-box">
+                    <div id="dots" v-on:click="addOrder">
+                        <div 
+                          v-for="(order, key) in orders"
+                          v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}">
+                          {{key}}
+                        </div>
+                    </div>
+                </div>
             </form>
             </section>
             <input id="orderButton" type="submit" value="Place order" v-on:click="markDone()"/>
